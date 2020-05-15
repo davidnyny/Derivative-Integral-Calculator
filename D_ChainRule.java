@@ -16,5 +16,37 @@
  *
  */
 public class D_ChainRule {
-
+  public static String differentiate(String input, String[] operations) {
+    String derivative = "";
+    int count = 0;
+    while (count < operations.length) {
+      if (operations[count].equals("cos")) {
+        
+      }
+      else if (operations[count].equals("sin")) {
+        
+      }
+      else if (operations[count].equals("tan")) {
+        
+      }
+      else if (operations[count].equals("sec")) {
+        
+      }
+      else if (operations[count].equals("csc")) {
+        
+      }
+      else if (operations[count].equals("cot")) {
+        
+      }
+      String expr1 = "";
+      String expr2 = "";
+      try {
+        
+      }
+      catch (Exception e) {
+        
+      }
+    }
+    return derivative;
+  }
 }
