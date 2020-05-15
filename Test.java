@@ -1,27 +1,13 @@
 /**
- * Test.java created by Alex Huang on Zenbook in Calculus Calculator
+ * Test.java created by Alex Huang
  *
- * Author:	 Alex Huang (anhuang@wisc.edu)
- * Date: 	 @date
+ * Author:   Alex Huang (anhuang@wisc.edu)
+ * Date:     @date
  * 
- * Course:	 CS400
- * Semester: Spring 2020
- * Lecture:	 002
- * 
- * IDE:		 Eclipse IDE for Java Developers
- * Version:	 2018-12 (4.14.0)
+ * IDE:      Eclipse IDE for Java Developers
+ * Version:  2018-12 (4.14.0)
  * Build ID: 20181214-0600
- *
- * Device:	 HUANG-ZENBOOK
- * OS:		 Windows 10 Home
- * Version:	 1809
- * OS Build: 17763.973
- *
- * List Collaborators: Name, email@wisc.edu, lecture number
- *
- * Other Credits:
- *
- * Known Bugs:
+ * 
  */
 
 /**
@@ -32,6 +18,7 @@
 public class Test {
   public static void main (String[] args) {
     System.out.println(test000_DPR_basic());
+    System.out.println(test001_DL_basic());
   }
   
   public static boolean test000_DPR_basic () {
@@ -45,6 +32,14 @@ public class Test {
     }
     String case3 = D_PowerRule.differentiate("x^10");
     if (!case3.equals("10x^9")) {
+      return false;
+    }
+    return true;
+  }
+  
+  public static boolean test001_DL_basic () {
+    String case1 = D_Log.differentiate("ln(x)");
+    if (!case1.equals("1/x")) {
       return false;
     }
     return true;
